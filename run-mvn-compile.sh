@@ -1,0 +1,1 @@
+ clear; mvn clean compile
