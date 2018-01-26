@@ -12,8 +12,7 @@ public class Main {
     public static void main(String[] args) {
         // Open a database connection
         // (create a new database if it doesn't exist yet):
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("pu_test");
-//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/db/points.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("production");
         EntityManager em = emf.createEntityManager();
 
         // Store 1000 Point objects in the database:
