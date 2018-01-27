@@ -24,12 +24,10 @@
 --	URL format error; 
 --	must be 
 --	"jdbc:h2:{ {.|mem:}[name] | [file:]fileName | {tcp|ssl}:[//]server[:port][,server2[:port]]/name }[;key=value...]" 
-but is 
-"jdbc:h2:tcp://localhost:9101//tmp/h2/REMATRICULAH2/db" [90046-194] 90046/90046 (Help)
 --
 -- java -jar ~/.m2/repository/com/h2database/h2/1.4.194/h2-1.4.194.jar -tcpPort 9101 -webAllowOthers -tcpAllowOthers -webPort 8888
-
-jdbc:h2:tcp://localhost:9101//tmp/h2/rematricula-db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=ORACLE;DATABASE_TO_UPPER=FALSE;TRACE_LEVEL_FILE=3;INIT=RUNSCRIPT FROM '/tmp/create.sql'
+--
+--	jdbc:h2:tcp://localhost:9101//tmp/h2/rematricula-db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=ORACLE;DATABASE_TO_UPPER=FALSE;TRACE_LEVEL_FILE=3;INIT=RUNSCRIPT FROM '/tmp/create.sql'
 
 DROP SCHEMA ACD;
 CREATE SCHEMA ACD;
