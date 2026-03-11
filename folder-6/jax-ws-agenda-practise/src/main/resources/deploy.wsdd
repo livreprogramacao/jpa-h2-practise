@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+<!--
+A tag service se refere ao seu webservice, o parâmetro name pode ser um nome qualquer para seu webservice. 
+
+a tag <parameter name="className" />
+refere-se ao caminho da classe que será o webservice. 
+
+a tag <parameter name="allowedMethods" />
+são os métodos que terão chamadas remotas o * significa todos. Para fazer uma restrição é necessário colocar o nome do método, separado por vírgulas caso exista mais de um. 
+
+a tag <parameter name="scope" />
+o escopo pode ser de três formas aplicação (application), sessão (session) e requisição (request). 
+
+O último é a tag beanMapping , que diz respeito ao objeto que queremos serializar / deserializar, neste caso colocamos um nome para chamadas (qname) de Contato, e o tipo do objeto que o gerenciará na rede será o BeanService e terá uma linguagem declarada e caminho completo da classe no atributo languageSpecificType . 
+-->
+ <service name="AGENDAWEB" provider="java:RPC">
+    <parameter name="className" value="com.axis.soap.tutorial.agendawebservice.AgendaWeb"/>
+    <parameter name="allowedMethods" value="*"/>
+    <parameter name="scope" value="application"/>
+    <beanMapping    qname="myNS:Contato" 
+                    xmlns:myNS="urn:BeanService"     
+                    languageSpecificType="java:com.axis.soap.tutorial.agendawebservice.entidade.Contato"/>
+  </service>
+
+
+</deployment>

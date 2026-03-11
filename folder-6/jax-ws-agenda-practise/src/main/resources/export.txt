@@ -1,0 +1,9 @@
+cd /home/duke/workspace/AgendaWebService
+export AXIS2_HOME=~/j/tools/axis2-1.7.1
+export AXIS2_LIB=$AXIS2_HOME/lib
+export AXIS2CLASSPATH=$AXIS2_LIB/wsdl4j-1.5.1.jar;$AXIS2_LIB/axis.jar;$AXIS2_LIB/commons-discovery-0.2.jar;$AXIS2_LIB/commons-logging- 1.0.4.jar;$AXIS2_LIB/jaxrpc.jar;$AXIS2_LIB/saaj.jar;$AXIS2_LIB/log4j-1.2.8.jar;$AXIS2_LIB/xml-apis.jar;$AXIS2_LIB/xercesImpl.jar;$AXIS2_LIB/jaxrpc.jar
+
+$AXIS2_HOME/bin/java2wsdl.sh -cp target/classes/ -cn com.axis.soap.tutorial.agendawebservice.AgendaWeb -of target/AgendaWeb.wsdl
+
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_60
+/home/duke/j/apache-tomcat-8.0.27/bin/startup.sh

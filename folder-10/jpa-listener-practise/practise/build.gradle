@@ -1,0 +1,11 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+archivesBaseName = 'HibernateJPA'
+version = '1' 
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'org.hibernate:hibernate-entitymanager:5.0.7.Final'
+    compile 'mysql:mysql-connector-java:5.1.31'
+}  

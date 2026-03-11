@@ -1,0 +1,1 @@
+Practise JPA Mapped Superclass

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Pesquisa</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </h:head>
+
+    <h:body>
+
+        <h1>Preencha o formulário</h1>
+
+        <h:form>
+            Nome:<h:inputText value="#{form.formulario.nome}"/>
+            <br/>
+            <h:commandButton value="Save" action="#{form.save}"/>
+        </h:form>
+
+        <h:dataTable var="formulario" value="#{form.formularios}" rendered="#{form.formularios.size() > 0}">
+            <f:facet name="header">
+                <p>
+                    <h:outputText value="Formulários" />
+                </p>
+            </f:facet>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Id"/>
+                </f:facet>
+                <h:outputText value="#{formulario.id}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Nome"/>
+                </f:facet>
+                <h:outputText value="#{formulario.nome}"/>
+            </h:column>
+
+            <f:facet name="footer">
+                <p>
+                    <h:outputText value="#{form.formularios.size()}  formularios existentes." />
+                </p>
+            </f:facet>
+
+        </h:dataTable>
+
+    </h:body>
+
+</html>
