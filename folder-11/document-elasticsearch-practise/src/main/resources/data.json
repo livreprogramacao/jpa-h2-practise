@@ -1,0 +1,12 @@
+[
+  {
+    "_class": "org.springframework.document.person.entity.Person",
+    "firstname": "Dave",
+    "lastname": "Matthews"
+  },
+  {
+    "_class": "org.springframework.document.person.entity.Person",
+    "firstname": "Carter",
+    "lastname": "Beauford"
+  }
+]

@@ -1,0 +1,43 @@
+# App config
+
+spring:
+  server:
+    port: 8900
+  profiles:
+    active: "dev"
+
+---
+spring:
+  profiles: dev
+  name: dev-YAML
+  environment: dev
+  servers:
+    - www.abc.dev.com
+    - www.xyz.dev.com
+
+---
+spring:
+  profiles: test
+  name: test-YAML
+  environment: test
+  servers:
+    - www.abc.test.com
+    - www.xyz.test.com
+
+---
+spring:
+  profiles: prod
+  name: prod-YAML
+  environment: production
+  servers:
+    - www.abc.com
+    - www.xyz.com
+# Local Elasticsearch config
+#spring.data.elasticsearch.rest.uris:http://localhost:9200
+#spring.data.elasticsearch.repositories.enabled:true
+#spring.data.elasticsearch.cluster-nodes:localhost:9300
+#spring.data.elasticsearch.cluster-name:elasticsearch
+#
+#elasticsearch.index.name:my_index
+#elasticsearch.user.type:user
+
