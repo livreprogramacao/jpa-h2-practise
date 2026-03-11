@@ -1,8 +1,33 @@
 # READ ME
 
+Summary
+
+This table outlines essential attributes for a Software Engineer, covering technical skills, soft skills, and tools/technologies. Each category includes pertinent attributes along with concise descriptions. These attributes serve as a roadmap for skill development in the software engineering field.
+
+
+| Category          | Attribute                   | Description                                                 |
+|-------------------|-----------------------------|-------------------------------------------------------------|
+| Technical Skills   | Programming Languages       | Proficiency in languages like Python, Java, C++, etc.      |
+|                   | Data Structures & Algorithms | Understanding of core concepts for efficient coding.       |
+|                   | Web Development             | Knowledge of HTML, CSS, JavaScript for front-end tasks.    |
+|                   | Backend Development         | Familiarity with server-side languages and frameworks.      |
+|                   | Databases                   | Understanding of SQL and NoSQL databases.                  |
+|                   | Version Control             | Proficiency in tools like Git for collaboration.           |
+|                   | System Design               | Ability to design scalable and efficient systems.           |
+|                   | Cloud Computing             | Familiarity with platforms like AWS, Azure, or GCP.        |
+| Soft Skills        | Communication               | Ability to convey ideas clearly and effectively.            |
+|                   | Teamwork                    | Collaboration skills for working in diverse teams.         |
+|                   | Problem Solving             | Analytical skills to diagnose and resolve issues.          |
+|                   | Adaptability                | Flexibility in learning new technologies and methodologies. |
+|                   | Time Management             | Prioritizing tasks and managing time effectively.          |
+| Tools/Technologies | IDEs                        | Proficiency in development environments (e.g., VSCode).    |
+|                   | Project Management Tools    | Familiarity with tools like JIRA, Trello for task tracking. |
+|                   | Testing Frameworks          | Knowledge of unit testing and quality assurance tools.      |
+|                   | CI/CD Tools                 | Understanding of Continuous Integration/Continuous Deployment processes. |
+
 ## Software engineer roadmap.
 
-| Software engineer roadmap         |                                                                        | 
+| folder                            |                                                                        | 
 |-----------------------------------|------------------------------------------------------------------------| 
 | 1. Core Java Mastery              | details about                                                          | 
 |                                   | OOP principles (SOLID, DRY, KISS)                                      | 
